@@ -43,9 +43,9 @@ Deployment
 
 You can deploy the NoteTaker App on platforms like AWS, DigitalOcean, or other cloud services. Choose the deployment option that best fits your needs.
 
-Feedback and Contributions
+Feedback and contributions
 
-Feedback and contributions are welcome! Feel free to submit issues or pull requests on the GitHub repository.
+Feedback and contributions are welcome! Feel free to submit issues or pull requests on the [GitHub repository](https://github.com/Rizwana1916/NoteTaker-app/tree/main).
 
 
 Support

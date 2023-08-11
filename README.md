@@ -19,16 +19,20 @@ python3 app.py
 The application will be accessible at http://localhost:5000.
 
 Tech Stack
+
 Frontend:
+
 HTML, CSS, JavaScript
 
 Backend:
+
 Python 3.8
 Flask (Python web framework)
 MongoDB Atlas as the cloud database service
 pymongo (Python driver for MongoDB)
 
 Features
+
 Create new notes with a title and content.
 Edit existing notes.
 Delete notes.
@@ -36,12 +40,15 @@ User authentication and authorization.
 Seamless integration of frontend and backend.
 
 Deployment
+
 You can deploy the NoteTaker App on platforms like AWS, DigitalOcean, or other cloud services. Choose the deployment option that best fits your needs.
 
 Feedback and Contributions
+
 Feedback and contributions are welcome! Feel free to submit issues or pull requests on the GitHub repository.
 
 Support
+
 If you have any questions or need assistance, connect with fellow developers on the community Discord server.
 
 Happy Note-Taking with NoteTaker App!

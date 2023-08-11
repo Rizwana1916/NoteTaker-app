@@ -47,6 +47,7 @@ Feedback and Contributions
 
 Feedback and contributions are welcome! Feel free to submit issues or pull requests on the GitHub repository.
 
+
 Support
 
 If you have any questions or need assistance, connect with fellow developers on the community Discord server.

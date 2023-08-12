@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Configure MongoDB connection
 app.config['MONGO_URI'] = 'mongodb://localhost:27017/note_app'
 mongo = MongoClient(app.config['MONGO_URI'])
-db = mongo.note_app
+db = mongo.Note_app
 notes_collection = db.notes
 
 @app.route('/')

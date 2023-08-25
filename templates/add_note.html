@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Note</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Your Ideas, Our Focus</h1>
+        <p>Transform your thoughts into notes.</p>
+    </header>
+
+    <main class="container">
+        <h2>Add a New Note</h2>
+        <form method="POST" action="{{ url_for('add_note') }}">
+            <div class="form-group">
+                <label for="task">Task:</label>
+                <input type="text" id="task" name="task" placeholder="Enter the task" required>
+            </div>
+            <div class="form-group">
+                <label for="note_content">Content:</label>
+                <textarea id="note_content" name="note_content" placeholder="Enter your note content" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="text" id="time" name="time" placeholder="Enter the time" required>
+            </div>
+            <button type="submit">Add Note</button>
+        </form>
+
+        <a href="{{ url_for('notes') }}">Back to Notes</a>
+    </main>
+</body>
+</html>
+

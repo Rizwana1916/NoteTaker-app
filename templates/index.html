@@ -44,6 +44,7 @@
                         {% endfor %}
                     </ul>
                     <a href="{{ url_for('add_note') }}" class="add-note-button">Add a New Note</a>
+                    <a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
                 {% else %}
                     <p class="login-prompt">My Notes: Please log in to add notes.</p>
                 {% endif %}
@@ -56,4 +57,3 @@
     </footer>
 </body>
 </html>
-

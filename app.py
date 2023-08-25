@@ -123,6 +123,11 @@ def delete_note(note_id):
             note_collection.delete_one({"_id": ObjectId(note_id)})
             return redirect(url_for("notes"))
     return redirect(url_for("login"))
+    
+@app.route("/logout")
+def logout():
+    session.clear()
+    return redirect(url_for("login"))
 
 if __name__ == "__main__":
     app.run(debug=True)

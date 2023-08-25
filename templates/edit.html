@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Note</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Edit Note</h1>
-    
-    <form method="post" action="">
-        <input type="text" name="title" value="{{ note.title }}" required>
-        <textarea name="content" required>{{ note.content }}</textarea>
-        <button type="submit">Save</button>
-    </form>
+    <header>
+        <h1>Edit Note</h1>
+    </header>
+
+    <main class="container">
+        <h2>Edit your note</h2>
+
+        <form method="POST" action="{{ url_for('edit_note', note_id=note._id) }}">
+            <div class="form-group">
+                <label for="task">Task:</label>
+                <input type="text" id="task" name="task" value="{{ note.task }}">
+            </div>
+            <div class="form-group">
+                <label for="updated_content">Updated Content:</label>
+                <textarea id="updated_content" name="updated_content">{{ note.content }}</textarea>
+            </div>
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="text" id="time" name="time" value="{{ note.time }}">
+            </div>
+            <button type="submit">Save Changes</button>
+        </form>
+
+        <a href="{{ url_for('notes') }}">Back to Notes</a>
+    </main>
+
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
 </body>
 </html>
+
